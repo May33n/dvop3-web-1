@@ -1,9 +1,36 @@
 <template>
   <div class="app">
-    <h1>Hello, World</h1>
+    <Sidebar />
+    <router-view />
   </div>
 </template>
 
-<style Lang="scss">
+<script setup>
+import Sidebar from './components/Sidebar.vue';
 
+</script>
+
+<style Lang="scss">
+:root {
+  --sidebar-width: 300px;
+
+}
+
+body {
+  background: var(--light);
+}
+
+.app {
+    display: flex;
+
+    main {
+      flex: 1 1 0;
+      padding: 2rem;
+
+      @media (max-width: 768px) {
+        padding-left: 6rem;
+      }
+
+    }
+}
 </style>
