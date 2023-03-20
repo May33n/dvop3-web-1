@@ -13,7 +13,14 @@ export default {
   <main class="app">
     <div class="cont-main">
       <div class="cont-left">left</div>
-      <div class="middle">middle</div>
+      <div class="middle">
+        <div class="lupa">
+          <img src="./images/mgl.png" alt="" width="16" height="16">
+          <p>Search here</p>
+        </div>
+        <div class="velky">velky</div>
+        <div class="maly">maly</div>
+      </div>
       <div class="divider"></div>
       <div class="flex-container-right">
         <div class="week">
@@ -53,6 +60,14 @@ export default {
   font-weight: 400;
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
+  .middle{
+  display: flex;
+  flex-direction: column;
+  .lupa{
+    display: flex;
+    flex-direction: row;
+  }
+  }
 
   .divider {
     background-color: gray;
