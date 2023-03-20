@@ -6,14 +6,12 @@
 </template>
 
 <script setup>
-import Sidebar from './components/Sidebar.vue';
-
+import Sidebar from "./components/Sidebar.vue";
 </script>
 
-<style Lang="scss">
+<style lang="scss">
 :root {
   --sidebar-width: 300px;
-
 }
 
 body {
@@ -21,16 +19,15 @@ body {
 }
 
 .app {
-    display: flex;
+  display: flex;
 
-    main {
-      flex: 1 1 0;
-      padding: 2rem;
+  main {
+    flex: 1 1 0;
+    padding: 2rem;
 
-      @media (max-width: 768px) {
-        padding-left: 6rem;
-      }
-
+    @media (max-width: 768px) {
+      padding-left: 6rem;
     }
+  }
 }
 </style>
