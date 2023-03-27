@@ -1,10 +1,11 @@
 <script>
+import Maly from './components/Maly.vue';
 import Today from './components/Today.vue'
 import Tommorow from './components/Tommorow.vue';
 
 export default {
   name: 'App',
-  components: { Today, Tommorow }
+  components: { Today, Tommorow, Maly }
 }
 </script>
 
@@ -21,7 +22,12 @@ export default {
           <img src="./images/Ellipse 1.svg" alt="">
         </div>
         <div class="velky">velky</div>
-        <div class="maly">maly</div>
+        <div class="maly">
+          <Maly/>
+          <Maly/>
+          <Maly/>
+          <Maly/>
+        </div>
       </div>
       <div class="divider"></div>
       <div class="flex-container-right">
@@ -83,14 +89,17 @@ export default {
       }
     }
     .velky{
-      height: 47vh;
+      height: 45vh;
       margin: 2vh;
       background-color: lightpink;
     }
     .maly{
-      height: 35vh;
-      margin: 2vh;
-      background-color: lightgray;
+      height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 
