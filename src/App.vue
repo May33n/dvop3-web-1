@@ -16,7 +16,9 @@ export default {
       <div class="middle">
         <div class="lupa">
           <img src="./images/mgl.png" alt="" width="16" height="16">
-          <p>Search here</p>
+          <p>Search here...</p>
+          <img src="./images/Notification.svg" alt="">
+          <img src="./images/Ellipse 1.svg" alt="">
         </div>
         <div class="velky">velky</div>
         <div class="maly">maly</div>
@@ -60,13 +62,36 @@ export default {
   font-weight: 400;
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
-  .middle{
-  display: flex;
-  flex-direction: column;
-  .lupa{
+
+  .middle {
     display: flex;
-    flex-direction: row;
-  }
+    margin: 0;
+    width: 54vw;
+    height: 100vh;
+    flex-direction: column;
+
+    .lupa {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      color: gray;
+      width: 100%;
+      padding-top: 3vh;
+      p{
+        width: 70%;
+      }
+    }
+    .velky{
+      height: 47vh;
+      margin: 2vh;
+      background-color: lightpink;
+    }
+    .maly{
+      height: 35vh;
+      margin: 2vh;
+      background-color: lightgray;
+    }
   }
 
   .divider {
@@ -125,17 +150,11 @@ export default {
     width: 20vw;
     height: 100vh;
   }
-
-  .middle {
-    margin: 0;
-    display: flex;
-    width: 54vw;
-    height: 100vh;
-  }
 }
 
 h3 {
   margin: 0vw 4vw 0vw 4vw;
   font-weight: 500;
-}</style>
+}
+</style>
 
