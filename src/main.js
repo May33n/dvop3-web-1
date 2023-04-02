@@ -7,10 +7,10 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './views/Home.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faAddressCard, faBarsStaggered, faGears, faPeopleGroup, faQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightFromBracket, faBarsStaggered, faCalendarDays, faGear, faLocationPin, faMap, faTableColumns} from '@fortawesome/free-solid-svg-icons'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBarsStaggered, faHouse, faPeopleGroup, faAddressCard, faQuestion, faGears)
+library.add(faBarsStaggered, faTableColumns, faMap, faLocationPin, faCalendarDays, faGear, faArrowRightFromBracket)
 
 
 const router = createRouter({

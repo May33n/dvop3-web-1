@@ -6,27 +6,31 @@
 
 		<div class="menu-toggle-wrap">
 			<button class="menu-toggle" @click="ToggleMenu">
-				<font-awesome-icon icon="fa-solid fa-bars-staggered" />
+				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-bars-staggered" /></span>
 			</button>
 		</div>
 
 		<h3>Menu</h3>
 		<div class="menu">
 			<router-link to="/" class="button">
-				<font-awesome-icon icon="fa-solid fa-house" />
-				<span class="text">Home</span>
+				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-table-columns" /></span>
+				<span class="text">Dashboard</span>
 			</router-link>
 			<router-link to="/about" class="button">
-				<font-awesome-icon icon="fa-solid fa-question" />
-				<span class="text">About</span>
+				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-map" /></span>
+				<span class="text">Map</span>
 			</router-link>
 			<router-link to="/team" class="button">
-				<font-awesome-icon icon="fa-solid fa-people-group" />
-				<span class="text">Team</span>
+				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-location-pin" /></span>
+				<span class="text">Saved Location</span>
 			</router-link>
 			<router-link to="/contact" class="button">
-				<font-awesome-icon icon="fa-solid fa-address-card" />
-				<span class="text">Contact</span>
+				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-calendar-days" /></span>
+				<span class="text">Calendar</span>
+			</router-link>
+            <router-link to="/contact" class="button">
+				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-gear" /></span>
+				<span class="text">Settings</span>
 			</router-link>
 		</div>
 
@@ -34,8 +38,8 @@
 		
 		<div class="menu">
 			<router-link to="/settings" class="button">
-				<font-awesome-icon icon="fa-solid fa-gears" />
-				<span class="text">Settings</span>
+				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-arrow-right-from-bracket" /></span>
+				<span class="text">Log Out</span>
 			</router-link>
 		</div>
 	</aside>
@@ -58,8 +62,8 @@ aside {
 	display: flex;
 	flex-direction: column;
 
-	background-color: var(--dark);
-	color: var(--light);
+	background-color: var(--light);
+	color: var(--dark);
 
 	width: calc(2rem + 32px);
 	overflow: hidden;
@@ -83,7 +87,7 @@ aside {
 	.menu-toggle-wrap {
 		display: flex;
 		justify-content: flex-end;
-		margin-bottom: 1rem;
+		margin-bottom: 0rem;
 
 		position: relative;
 		top: 0;
@@ -92,8 +96,8 @@ aside {
 		.menu-toggle {
 			transition: 0.2s ease-in-out;
 			.material-icons {
-				font-size: 2rem;
-				color: var(--light);
+				font-size: 1.2rem;
+				color: var(--dark);
 				transition: 0.2s ease-out;
 			}
 			
@@ -109,10 +113,11 @@ aside {
 	h3, .button .text {
 		opacity: 0;
 		transition: opacity 0.3s ease-in-out;
+        padding: rem;
 	}
 
 	h3 {
-		color: var(--grey);
+		color: var(--dark);
 		font-size: 0.875rem;
 		margin-bottom: 0.5rem;
 		text-transform: uppercase;
@@ -127,20 +132,24 @@ aside {
 			text-decoration: none;
 
 			transition: 0.2s ease-in-out;
-			padding: 0.5rem 1rem;
+			padding: 1rem 2rem;
 
 			.material-icons {
-				font-size: 2rem;
-				color: var(--light);
+				font-size: 1rem;
+				color: var(--dark);
 				transition: 0.2s ease-in-out;
 			}
 			.text {
-				color: var(--light);
+                display: flex;
+				color: var(--dark);
 				transition: 0.2s ease-in-out;
+                text-align: right;
+                
 			}
 
 			&:hover {
-				background-color: var(--dark-alt);
+                text-decoration: underline;
+                
 
 				.material-icons, .text {
 					color: var(--primary);
@@ -186,6 +195,7 @@ aside {
 		.button {
 			.material-icons {
 				margin-right: 1rem;
+                padding-right: 1rem;
 			}
 		}
 
