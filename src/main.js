@@ -5,6 +5,13 @@ import './reset.css'
 
 import { createRouter, createWebHashHistory } from 'vue-router'  
 import Home from './views/Home.vue'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faAddressCard, faBarsStaggered, faGears, faPeopleGroup, faQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faBarsStaggered, faHouse, faPeopleGroup, faAddressCard, faQuestion, faGears)
+
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -22,3 +29,4 @@ const router = createRouter({
 })
 
 createApp(App).use(router).mount('#app')
+createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
