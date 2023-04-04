@@ -1,7 +1,7 @@
 <template>
 	<aside :class="`${is_expanded ? 'is-expanded' : ''}`">
 		<div class="logo">
-            <img src="../assets/logo.png" alt="Vue">
+            <img src="../assets/logo2.png" alt="Vue">
 		</div>
 
 		<div class="menu-toggle-wrap">
@@ -16,7 +16,7 @@
 				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-table-columns" /></span>
 				<span class="text">Dashboard</span>
 			</router-link>
-			<router-link to="/about" class="button">
+			<router-link to="/map" class="button">
 				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-map" /></span>
 				<span class="text">Map</span>
 			</router-link>
@@ -47,7 +47,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import logoURL from '../assets/logo.png'
 
 const is_expanded = ref(localStorage.getItem("is_expanded") === "true")
 
@@ -69,6 +68,7 @@ aside {
 	overflow: hidden;
 	min-height: 100vh;
 	padding: 1rem;
+	
 
 	transition: 0.2s ease-in-out;
 
@@ -80,7 +80,7 @@ aside {
 		margin-bottom: 1rem;
 
 		img {
-			width: 2rem;
+			width: 10rem;
 		}
 	}
 
@@ -92,6 +92,7 @@ aside {
 		position: relative;
 		top: 0;
 		transition: 0.2s ease-in-out;
+		
 
 		.menu-toggle {
 			transition: 0.2s ease-in-out;
@@ -114,6 +115,7 @@ aside {
 		opacity: 0;
 		transition: opacity 0.3s ease-in-out;
         padding: rem;
+		
 	}
 
 	h3 {
@@ -125,6 +127,7 @@ aside {
 
 	.menu {
 		margin: 0 -1rem;
+		
 
 		.button {
 			display: flex;
@@ -157,13 +160,13 @@ aside {
 			}
 
 			&.router-link-exact-active {
-				background-color: var(--dark-alt);
-				border-right: 5px solid var(--primary);
+				border-right: 2px solid var(--primary);
 
 				.material-icons, .text {
 					color: var(--primary);
 				}
 			}
+			
 		}
 	}
 

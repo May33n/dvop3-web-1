@@ -1,7 +1,7 @@
 <template>
   <main class="about-page">
     <h1>About</h1>
-    <p>This is the about page</p>
+    <p>This is the map page</p>
     <img src="src/components/ptak.gif" alt="" />
   </main>
 </template>
