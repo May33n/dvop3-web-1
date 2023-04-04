@@ -19,7 +19,7 @@ import Sidebar from './components/Sidebar.vue'
 	--grey: #64748b;
 	--dark: #1e293b;
 	--dark-alt: #334155;
-	--light: #f1f5f9;
+	--light: #ffffff;
 	--sidebar-width: 250px;
 }
 
