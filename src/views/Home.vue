@@ -16,10 +16,10 @@ export default {
 		<div class="cont-main">
       <div class="middle">
         <div class="lupa">
-          <img src="./images/mgl.png" alt="" width="16" height="16">
+            <span class="material-icons"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></span>
           <p>Search here...</p>
-          <img src="./images/Notification.svg" alt="">
-          <img src="./images/Ellipse 1.svg" alt="">
+          <span class="material-icons"><font-awesome-icon icon="fa-solid fa-bell" /></span>
+          <span class="material-icons"><font-awesome-icon icon="fa-solid fa-circle" /></span>
         </div>
         <div class="velky">velky</div>
         <div class="maly">
@@ -32,9 +32,9 @@ export default {
       <div class="divider"></div>
       <div class="flex-container-right">
         <div class="week">
-          <img src="./images/arrow-left.svg" alt="" width="24" height="24">
+            <span class="material-icons"><font-awesome-icon icon="fa-solid fa-chevron-left" /></span>
           <h3>This Week</h3>
-          <img src="./images/arrow-right.svg" alt="" width="24" height="24">
+          <span class="material-icons"><font-awesome-icon icon="fa-solid fa-chevron-right" /></span>
         </div>
         <div class="today">
           <p>Today</p>
@@ -70,11 +70,12 @@ export default {
   font-weight: 400;
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
+	
   .middle {
     display: flex;
     margin: 0;
     width: 53vw;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     .lupa {
       display: flex;
@@ -111,7 +112,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 23vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0.5vw;
     align-items: center;
     row-gap: 2vh;
