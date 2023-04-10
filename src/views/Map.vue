@@ -2,7 +2,7 @@
   <main class="map-page">
     <h1>Map</h1>
     <p>This is the map page</p>
-    <img src="src/components/ptak.gif" alt="" />
+    <img src="src/images/ptak.gif" alt="" />
   </main>
 </template>
 
