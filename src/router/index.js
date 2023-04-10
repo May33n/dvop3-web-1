@@ -12,6 +12,18 @@ const router = createRouter({
 			path: '/map',
 			component: () => import('../views/Map.vue')
 		},
+		{
+			path: '/saved',
+			component: () => import('../views/Saved-location.vue')
+		},
+		{
+			path: '/calendar',
+			component: () => import('../views/Calendar.vue')
+		},
+		{
+			path: '/settings',
+			component: () => import('../views/Settings.vue')
+		},
 	],
 })
 

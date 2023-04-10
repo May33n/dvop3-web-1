@@ -20,15 +20,15 @@
 				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-map" /></span>
 				<span class="text">Map</span>
 			</router-link>
-			<router-link to="/team" class="button">
+			<router-link to="/saved" class="button">
 				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-location-pin" /></span>
 				<span class="text">Saved Location</span>
 			</router-link>
-			<router-link to="/contact" class="button">
+			<router-link to="/calendar" class="button">
 				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-calendar-days" /></span>
 				<span class="text">Calendar</span>
 			</router-link>
-            <router-link to="/contact" class="button">
+            <router-link to="/settings" class="button">
 				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-gear" /></span>
 				<span class="text">Settings</span>
 			</router-link>
@@ -37,7 +37,7 @@
 		<div class="flex"></div>
 		
 		<div class="menu">
-			<router-link to="/settings" class="button">
+			<router-link to="/log-out" class="button">
 				<span class="material-icons"><font-awesome-icon icon="fa-solid fa-arrow-right-from-bracket" /></span>
 				<span class="text">Log Out</span>
 			</router-link>

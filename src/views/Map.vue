@@ -1,6 +1,6 @@
 <template>
-  <main class="about-page">
-    <h1>About</h1>
+  <main class="map-page">
+    <h1>Map</h1>
     <p>This is the map page</p>
     <img src="src/components/ptak.gif" alt="" />
   </main>
