@@ -138,8 +138,7 @@ export default {
       p {
         padding: 0vh 0vh 0vh 2.75vh;
         font-size: 1rem;
-        height: 7vh;
-        height: 3rem;
+        height: 6rem;
       }
       .today-grid-cont {
         display: grid;
