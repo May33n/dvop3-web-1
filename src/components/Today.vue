@@ -13,7 +13,8 @@
     align-items: center;
     justify-content: center;
     height: 15vh;
-    row-gap: 0.3rem;
+    width: 4.5vw;
+    row-gap: 0.3vw;
     background-color: lightgrey;
     border-radius: 10px;
     .t {

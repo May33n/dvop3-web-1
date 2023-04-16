@@ -65,6 +65,7 @@ export default {
 .cont-main {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -136,7 +137,7 @@ export default {
       .today-grid-cont {
         display: grid;
         grid-template-columns: 11vh 11vh 11vh 11vh;
-        justify-content: space-around;
+        justify-content: space-evenly;
       }
     }
     .tomorrow-grid-cont {
