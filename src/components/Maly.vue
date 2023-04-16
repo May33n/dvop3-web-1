@@ -6,7 +6,7 @@
             <p class="p1">1234</p>
         </div>
         <div class="icon">
-            <img src="src/images/Icon.svg" alt="" width="100px" height="100px">
+            <img src="src/images/Icon.svg" alt="" width="80px" height="80px">
         </div>
     </div>
 </template>

@@ -2,11 +2,12 @@
 import Maly from '../components/Maly.vue';
 import Today from '../components/Today.vue';
 import Tomorrow from '../components/Tomorrow.vue';
+import Velky from '../components/Velky.vue';
 
 
 export default {
     name: 'Home',
-  components: { Today, Tomorrow, Maly }
+  components: { Today, Tomorrow, Maly, Velky }
 
 }
 </script>
@@ -21,7 +22,9 @@ export default {
           <span class="material-icons"><font-awesome-icon icon="fa-solid fa-bell" /></span>
           <span class="material-icons"><font-awesome-icon icon="fa-solid fa-circle" /></span>
         </div>
-        <div class="velky">velky</div>
+        <div class="velky">
+          <Velky/>
+        </div>
         <div class="maly">
           <Maly/>
           <Maly/>
@@ -76,7 +79,7 @@ export default {
     display: flex;
     margin: 0;
     width: 53vw;
-    min-height: 100vh;
+    min-height: 80vh;
     flex-direction: column;
     .lupa {
       display: flex;
@@ -93,7 +96,10 @@ export default {
     .velky{
       height: 45vh;
       margin: 2vh;
-      background-color: lightpink;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
     .maly{
       height: 40vh;
@@ -106,14 +112,14 @@ export default {
   }
   .divider {
     background-color: gray;
-    height: 100vh;
+    height: 95vh;
     width: 0.1vw;
   }
   .flex-container-right {
     display: flex;
     flex-direction: column;
     width: 23vw;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 0.5vw;
     align-items: center;
     row-gap: 2vh;
@@ -128,14 +134,16 @@ export default {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 25%;
+      height: 20%;
       p {
         padding: 0vh 0vh 0vh 2.75vh;
         font-size: 1rem;
         height: 7vh;
+        height: 3rem;
       }
       .today-grid-cont {
         display: grid;
+        padding-top: 1rem;
         grid-template-columns: 11vh 11vh 11vh 11vh;
         justify-content: space-evenly;
       }
@@ -151,7 +159,7 @@ export default {
     margin: 0;
     display: flex;
     width: 20vw;
-    height: 100vh;
+    height: 80vh;
   }
 }
 h3 {
