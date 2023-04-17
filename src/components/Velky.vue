@@ -1,7 +1,7 @@
 <template>
     <div class="cont">
         <div class="text">
-            <img src="../images/temp0.png" class="picture" alt="" style="display: inline-block; width: 45%; height: auto;">
+            <img src="../images/temp4.svg" class="picture" alt="" style="display: inline-block; width: 45%; height: auto;">
             <p class="location"><font-awesome-icon icon="fa-solid fa-location-pin" /> Location</p>
             <p class="time">longer text</p>
             <p class="temp">12°</p>
