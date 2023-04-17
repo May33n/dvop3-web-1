@@ -74,12 +74,13 @@ export default {
   font-weight: 400;
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
+  height: 100vh;
+  padding: 0.5rem;
 	
   .middle {
     display: flex;
     margin: 0;
     width: 53vw;
-    min-height: 80vh;
     flex-direction: column;
     .lupa {
       display: flex;
@@ -119,7 +120,6 @@ export default {
     display: flex;
     flex-direction: column;
     width: 23vw;
-    min-height: 80vh;
     padding: 0.5vw;
     align-items: center;
     row-gap: 2vh;
@@ -152,6 +152,7 @@ export default {
       width: 95%;
       grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
       row-gap: 1vh;
+      padding-top: 1rem ;
     }
   }
   .cont-left {
